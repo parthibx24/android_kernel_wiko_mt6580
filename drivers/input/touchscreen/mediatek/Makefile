@@ -13,6 +13,7 @@ obj-y   +=  tpd_init.o
 obj-y   +=  tpd_misc.o
 obj-y   +=  tpd_setting.o
 
+subdir-ccflags-y += -Wno-error
 obj-$(CONFIG_TOUCHSCREEN_MTK_GT1151)	+=  GT1151/
 obj-$(CONFIG_TOUCHSCREEN_MTK_GT910)	+=  GT910/
 obj-$(CONFIG_TOUCHSCREEN_MTK_FT6336)	+=  ft6336/
