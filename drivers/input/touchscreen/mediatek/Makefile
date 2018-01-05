@@ -1,5 +1,6 @@
 include $(srctree)/drivers/misc/mediatek/Makefile.custom
 #subdir-ccflags-y += -Werror
+subdir-ccflags-y += -Wno-error
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/include/mt-plat/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/hwmon/include/
 ccflags-y += -I$(srctree)/drivers/input/touchscreen/mediatek
@@ -13,7 +14,6 @@ obj-y   +=  tpd_init.o
 obj-y   +=  tpd_misc.o
 obj-y   +=  tpd_setting.o
 
-subdir-ccflags-y += -Wno-error
 obj-$(CONFIG_TOUCHSCREEN_MTK_GT1151)	+=  GT1151/
 obj-$(CONFIG_TOUCHSCREEN_MTK_GT910)	+=  GT910/
 obj-$(CONFIG_TOUCHSCREEN_MTK_FT6336)	+=  ft6336/
