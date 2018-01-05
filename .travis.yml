@@ -1,7 +1,7 @@
 language: C
 dist: trusty
 before_install:
-  - export DEVICE=v3702 ARCH=arm
+  - export DEVICE=v3702 ARCH=arm 
   - git clone https://bitbucket.org/UBERTC/arm-eabi-4.8 toolchain
   - export CROSS_COMPILE=$PWD/toolchain/bin/arm-eabi-
   - sudo apt-get -qq update
@@ -12,8 +12,8 @@ before_install:
 install: true
 
 script:
-  - make v3702_defconfig
-  - make 
+  - make -C $PWD O=$PWD/out v3702_defconfig
+  - make -C $PWD O=$PWD/out
   - cp out/arch/arm/boot/zImage-dtb zImage-$DEVICE-$(date +%Y%b%d%H%M)
   - curl --upload-file zImage-*.zip https://transfer.sh
 
