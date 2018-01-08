@@ -196,8 +196,7 @@ static void write_cmos_sensor(kal_uint32 addr, kal_uint32 para)
 
 }
 
-set_dummy()
-{
+int set_dummy() {
  	kal_uint32 hb = 0;
 	kal_uint32 vb = 0;
 	LOG_INF("dummyline = %d, dummypixels = %d \n", imgsensor.dummy_line, imgsensor.dummy_pixel);
