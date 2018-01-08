@@ -196,7 +196,7 @@ static void write_cmos_sensor(kal_uint32 addr, kal_uint32 para)
 
 }
 
-static void set_dummy()
+set_dummy()
 {
  	kal_uint32 hb = 0;
 	kal_uint32 vb = 0;
