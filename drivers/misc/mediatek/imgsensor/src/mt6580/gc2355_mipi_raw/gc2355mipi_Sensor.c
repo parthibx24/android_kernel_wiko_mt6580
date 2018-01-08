@@ -216,7 +216,7 @@ static void set_dummy(void) {
 //  end
 }    /*    set_dummy  */
 
-static kal_uint32 return_sensor_id()
+static kal_uint32 return_sensor_id(void)
 {
     return ((read_cmos_sensor(0xf0) << 8) | read_cmos_sensor(0xf1));
 }
@@ -778,7 +778,7 @@ static void normal_video_setting(kal_uint16 currefps)
 
 }
 
-static void hs_video_setting()
+static void hs_video_setting(void)
 {
     LOG_INF("E\n");
 
@@ -815,7 +815,7 @@ static void hs_video_setting()
 
 }
 
-static void slim_video_setting()
+static void slim_video_setting(void)
 {
     LOG_INF("E\n");
 
