@@ -1,7 +1,7 @@
 language: C
 dist: trusty
 before_install:
-  - export DEVICE=v3702 ARCH=arm 
+  - export DEVICE=v3802 ARCH=arm 
   - git clone https://github.com/aleha-druga/eabi-4.8 toolchain
   - export CROSS_COMPILE=$PWD/toolchain/bin/arm-eabi-
   - sudo apt-get -qq update
@@ -12,7 +12,7 @@ before_install:
 install: true
 
 script:
-  - make -C $PWD O=$PWD/out v3702_defconfig
+  - make -C $PWD O=$PWD/out v3802_defconfig
   - make -C $PWD O=$PWD/out
   - cd out/arch/arm/boot/
   - zip zImage-$DEVICE-$(date +%Y%b%d%H%M).zip zImage-dtb
