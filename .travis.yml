@@ -14,7 +14,7 @@ install: true
 script:
   - make -C $PWD O=$PWD/out v3702_defconfig
   - make -C $PWD O=$PWD/out
-  - zip zImage-$DEVICE-$(date +%Y%b%d%H%M).zip arch/arm/boot/zImage-dtb
+  - zip zImage-$DEVICE-$(date +%Y%b%d%H%M).zip out/arch/arm/boot/zImage-dtb
   - curl --upload-file zImage-*.zip https://transfer.sh
 
 deploy:
