@@ -1,5 +1,5 @@
 include $(srctree)/drivers/misc/mediatek/Makefile.custom
-#subdir-ccflags-y += -Werror
+subdir-ccflags-y += -Werror
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/include/mt-plat/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/hwmon/include/
 ccflags-y += -I$(srctree)/drivers/input/touchscreen/mediatek
