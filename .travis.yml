@@ -2,7 +2,7 @@ language: C
 dist: trusty
 before_install:
   - export DEVICE=v3702 ARCH=arm 
-  - git clone https://bitbucket.org/UBERTC/arm-eabi-4.8 toolchain
+  - git clone https://github.com/Parthib24/armebi-4.9-toolchain toolchain
   - export CROSS_COMPILE=$PWD/toolchain/bin/arm-eabi-
   - sudo apt-get -qq update
   - sudo apt-get install -y build-essential kernel-package libncurses5-dev bzip2
