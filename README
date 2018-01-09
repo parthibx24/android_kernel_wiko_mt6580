@@ -1,4 +1,29 @@
-        Linux kernel release 3.x <http://kernel.org/>
+Device CodeName      | Device Model         | Status          	   | Defconfig(s)
+--------------------:|:--------------------:|:--------------------:|:--------------------
+ p4200 				 | *Unknown* 			| *Not Tested* 		   | p4200_defconfig, p4200_debug_defconfig
+ p5000 				 | *Unknown* 			| *Not Tested*		   | p5000_defconfig, p5000_debug_defconfig
+ s5030 				 | BLU_D030UX 			| *Not Tested* 		   | s5030_defconfig, s5030_debug_defconfig
+ s5250 				 | BLU_D010U 			| *Not Tested* 		   | s5250_defconfig, s5250_debug_defconfig
+ tinno6580_we_m 	 | Wiko lenny 2 			| *Not Tested* 		   | tinno6580_we_m_defconfig, tinno6580_we_m_debug_defconfig
+ tinno6580_weg_m 	 | *Unknown* 			| *Not Tested* 		   | tinno6580_weg_m_defconfig, tinno6580_weg_m_debug_defconfig
+ v2500 				 | Walton Primo D8,QMobile X32 			| *Not Tested* 		   | v2500_defconfig, v2500_debug_defconfig
+ v2500_512 			 | *Unknown* 			| *Not Tested* 		   | v2500_512_defconfig, v2500_512_debug_defconfig
+ v2504 				 | Wiko Sunny 			| *Not Tested* 		   | v2504_defconfig, v2504_debug_defconfig
+ v2504_512 			 | *Unknown* 			| *Not Tested* 		   | v2504_512_defconfig, v2504_512_debug_defconfig
+ v2600 				 | Qmobile X700 Pro II 			| *Not Tested* 		   |  v2600_defconfig, v2600_debug_defconfig
+ v2600_512 			 | *Unknown* 			| *Not Tested* 		   | v2600_512_defconfig, v2600_512_debug_defconfig
+ v2800 				 | Wiko K Kool 			| *Not Tested* 		   | v2800_defconfig, v2800_debug_defconfig
+ v2800_512 			 | *Unknown* 			| *Not Tested* 		   | v2800_512_defconfig, v2800_512_debug_defconfig
+ v2802 				 | WIKO JERRY MTK,Symphony V75 MTK 			| *Not Tested* 		   | v2802_defconfig, v2802_debug_defconfig
+ v3610 				 | QMobile Energy X1 			| *Not Tested* 		   | v3610_defconfig, v3610_debug_defconfig
+ v3702 				 | Wiko lenny 3,Walton Primo GH6 			| WORKING 		   | v3702_defconfig, v3702_debug_defconfig
+ v3750 				 | Wiko Robby 			| *Not Tested* 		   | v3750_defconfig, v3750_debug_defconfig
+ v3800 				 | Symphony R20,Micromax Q350 			| *Not Tested* 		   | v3800_defconfig, v3800_debug_defconfig
+ v3802 				 | WIKO Lenny3 Max 			| *Not Tested* 		   | v3802_defconfig, v3802_debug_defconfig
+
+![Status](https://travis-ci.org/Parthib24/android_kernel_wiko_mt6580.svg)
+
+Linux kernel release 3.x <http://kernel.org/>
 
 These are the release notes for Linux version 3.  Read them carefully,
 as they tell you what this is all about, explain how to install the
@@ -409,4 +434,3 @@ IF SOMETHING GOES WRONG:
 
    gdb'ing a non-running kernel currently fails because gdb (wrongly)
    disregards the starting offset for which the kernel is compiled.
-
