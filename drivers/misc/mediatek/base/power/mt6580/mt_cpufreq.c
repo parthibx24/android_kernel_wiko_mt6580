@@ -89,16 +89,18 @@
 #define DEFAULT_VOLT_VCORE      (115000)
 
 /* for DVFS OPP table */
-#define CPU_DVFS_FREQ0   (1495000)	/* KHz */
-#define CPU_DVFS_FREQ1   (1300000)	/* KHz */
-#define CPU_DVFS_FREQ2   (1209000)	/* KHz */
-#define CPU_DVFS_FREQ3   (1105000)	/* KHz */
-#define CPU_DVFS_FREQ4   (1001000)	/* KHz */
-#define CPU_DVFS_FREQ5   (903500) /* KHz */	/* 1.807/2 */
-#define CPU_DVFS_FREQ6   (754000) /* KHz */	/* 1.508/2 */
-#define CPU_DVFS_FREQ7   (604500) /* KHz */	/* 1.209/2 */
+#define CPU_DVFS_FREQ0   (1555000) /* KHz */
+#define CPU_DVFS_FREQ1   (1495000) /* KHz */
+#define CPU_DVFS_FREQ2   (1350000) /* KHz */
+#define CPU_DVFS_FREQ3   (1300000) /* KHz */
+#define CPU_DVFS_FREQ4   (1255000) /* KHz */
+#define CPU_DVFS_FREQ5   (1050600) /* KHz */
+#define CPU_DVFS_FREQ6   (903500) /* KHz */ //1.807/2
+#define CPU_DVFS_FREQ7   (805200) /* KHz */ //1.756/2
+#define CPU_DVFS_FREQ8   (754000) /* KHz */ //1.508/2
+#define CPU_DVFS_FREQ9   (604500) /* KHz */ //1.209/2
 
-#define CPUFREQ_LAST_FREQ_LEVEL    (CPU_DVFS_FREQ7)
+#define CPUFREQ_LAST_FREQ_LEVEL    (CPU_DVFS_FREQ9)
 
 /*
  * LOG and Test
